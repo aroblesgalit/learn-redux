@@ -11,3 +11,42 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button.counter {
+  padding: 10px;
+  width: 60px;
+  font-size: 24px;
+  color: #fff;
+  margin: 4px;
+  border: none;
+  background-color: #106db9;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button.counter:hover {
+  background-color: #0b8cf5;
+}
+
+button.login {
+  padding: 10px 20px;
+  border: none;
+  background-color: #0bf5c2;
+  color: #444;
+  text-transform: uppercase;
+  border-radius: 4px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+}
+
+button.login:hover {
+  background-color: #14cca4;
+}
