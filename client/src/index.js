@@ -21,8 +21,16 @@ const decrement = () => {
   }
 }
 
-
 // REDUCER -- describes how your action (name) transforms your current state into a new state
+const counter = (state = 0, action) => {
+  switch(action.type) {
+    case "INCREMENT":
+      return state + 1;
+    case "DECREMENT":
+      return state - 1;
+  }
+}
+
 
 // DISPATCH -- executes the action (name)
 
