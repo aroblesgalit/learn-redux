@@ -3,8 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-// import { createStore } from "redux";
+import { createStore } from "redux";
+import allReducers from "./reducers";
 
+const store = createStore(allReducers);
 
 
 // // STORE -> GLOBALIZED STATE -- holds all data/state for your app 
